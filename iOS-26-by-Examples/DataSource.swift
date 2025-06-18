@@ -7,7 +7,12 @@ struct Feature: Identifiable {
 }
 
 enum DataSource {
-    private static let items: [(feature: Feature, destination: AnyView)] = []
+    private static let items: [(feature: Feature, destination: AnyView)] = [
+        (
+            Feature(title: "FoundationModels + MapKit", systemImage: "map"),
+            AnyView(FoundationModelsMapsDemoView())
+        )
+    ]
 
     static var features: [Feature] { items.map { $0.feature } }
 
