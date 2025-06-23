@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS ↔ Swift Demo</title>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const sendBtn = document.getElementById('sendToNative');
+      const callJsBtn = document.getElementById('callJs');
+
+      sendBtn.addEventListener('click', () => {
+        const data = {
+          action: "greet",
+          payload: document.getElementById('textInput').value
+        };
+        window.webkit.messageHandlers.nativeHandler.postMessage(data);
+      });
+
+      callJsBtn.addEventListener('click', () => {
+        window.webkit.messageHandlers.requestRandom.postMessage("");
+      });
+    });
+
+    function updateFromSwift(message) {
+      const resultDiv = document.getElementById('jsResult');
+      resultDiv.innerText = "Received value from Swift: " + message;
+    }
+  </script>
+</head>
+<body>
+  <h1>JS ↔ Swift Demo</h1>
+  <input type="text" id="textInput" placeholder="Enter text" />
+  <button id="sendToNative">Send to Swift</button>
+
+  <p id="nativeResponse"></p>
+
+  <button id="callJs">Request a number from Swift</button>
+  <p id="jsResult"></p>
+</body>
+</html>

@@ -11,6 +11,8 @@ struct WebPageDemo: View {
                 Section("Main features") {
                     NavigationLink("Basic WebView",
                                    destination: WebPageDemoView(viewModel: viewModel))
+                    NavigationLink("JavaScript Interaction and Loading Local HTML",
+                                   destination: JavaScriptIntegrationView(viewModel: viewModel))
                 }
             }
             .navigationTitle("WebView")
