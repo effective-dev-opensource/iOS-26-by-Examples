@@ -11,6 +11,10 @@ enum DataSource {
         (
             Feature(title: "FoundationModels + MapKit", systemImage: "map"),
             AnyView(FoundationModelsMapsDemoView())
+        ),
+        (
+            Feature(title: "WebKit", systemImage: "safari"),
+            AnyView(WebPageDemo())
         )
     ]
 
