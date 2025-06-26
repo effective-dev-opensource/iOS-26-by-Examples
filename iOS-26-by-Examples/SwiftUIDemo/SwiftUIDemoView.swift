@@ -11,6 +11,11 @@ struct SwiftUIDemoView: View {
                 }
             }
 
+            Tab("Rich Text", systemImage: "textformat") {
+                NavigationStack {
+                    RichTextEditorView(viewModel: viewModel)
+                }
+            }
         }
         .tabViewStyle(.sidebarAdaptable)
     }
