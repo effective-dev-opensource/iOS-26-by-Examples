@@ -15,6 +15,10 @@ enum DataSource {
         (
             Feature(title: "WebKit", systemImage: "safari"),
             AnyView(WebPageDemo())
+        ),
+        (
+            Feature(title: "SwiftUI", systemImage: "swift"),
+            AnyView(SwiftUIDemoView())
         )
     ]
 
