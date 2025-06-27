@@ -19,7 +19,11 @@ enum DataSource {
         (
             Feature(title: "SwiftUI", systemImage: "swift"),
             AnyView(SwiftUIDemoView())
-        )
+        ),
+        (
+            Feature(title: "PaperKit", systemImage: "pencil.and.outline"),
+            AnyView(PaperKitViewControllerRepresentable())
+        ),
     ]
 
     static var features: [Feature] { items.map { $0.feature } }
