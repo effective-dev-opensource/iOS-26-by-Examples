@@ -6,8 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AE54FEE72E13B38800314795 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AE54FEE62E13B37600314795 /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		AE50C3232E002796002E6286 /* iOS-26-by-Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-26-by-Examples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE54FEE62E13B37600314795 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AE54FEE92E13B88E00314795 /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main.png; sourceTree = "<group>"; };
+		AE54FEEA2E13B8E000314795 /* main_screen_FoundationModels_MapKit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_screen_FoundationModels_MapKit.png; sourceTree = "<group>"; };
+		AE54FEEB2E13B94F00314795 /* interesting_places.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = interesting_places.png; sourceTree = "<group>"; };
+		AE54FEEC2E13B98C00314795 /* optimal_route.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = optimal_route.png; sourceTree = "<group>"; };
+		AE54FEEE2E13B9E800314795 /* main_screen_webView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_screen_webView.png; sourceTree = "<group>"; };
+		AE54FEEF2E13B9FB00314795 /* basic_webView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basic_webView.png; sourceTree = "<group>"; };
+		AE54FEF02E13BA0F00314795 /* js_interaction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = js_interaction.png; sourceTree = "<group>"; };
+		AE54FEF12E13BB5600314795 /* main_screen_swiftui.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_screen_swiftui.png; sourceTree = "<group>"; };
+		AE54FEF22E13BB5A00314795 /* main_screen_swiftui2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_screen_swiftui2.png; sourceTree = "<group>"; };
+		AE54FEF32E13BB6A00314795 /* rich_text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rich_text.png; sourceTree = "<group>"; };
+		AE54FEF42E13BD6D00314795 /* paperKit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paperKit.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +48,8 @@
 		AE50C31A2E002795002E6286 = {
 			isa = PBXGroup;
 			children = (
+				AE54FEE82E13B87900314795 /* resources */,
+				AE54FEE62E13B37600314795 /* README.md */,
 				AE50C3252E002796002E6286 /* iOS-26-by-Examples */,
 				AE50C3242E002796002E6286 /* Products */,
 			);
@@ -43,6 +61,24 @@
 				AE50C3232E002796002E6286 /* iOS-26-by-Examples.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AE54FEE82E13B87900314795 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				AE54FEF42E13BD6D00314795 /* paperKit.png */,
+				AE54FEF32E13BB6A00314795 /* rich_text.png */,
+				AE54FEF22E13BB5A00314795 /* main_screen_swiftui2.png */,
+				AE54FEF12E13BB5600314795 /* main_screen_swiftui.png */,
+				AE54FEF02E13BA0F00314795 /* js_interaction.png */,
+				AE54FEEF2E13B9FB00314795 /* basic_webView.png */,
+				AE54FEEE2E13B9E800314795 /* main_screen_webView.png */,
+				AE54FEEC2E13B98C00314795 /* optimal_route.png */,
+				AE54FEE92E13B88E00314795 /* main.png */,
+				AE54FEEA2E13B8E000314795 /* main_screen_FoundationModels_MapKit.png */,
+				AE54FEEB2E13B94F00314795 /* interesting_places.png */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE54FEE72E13B38800314795 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
